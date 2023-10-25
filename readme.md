@@ -7,6 +7,23 @@ Autor a lektor: Marek Mansell (Učíme s Hardvérom / SPy)
 *BBC micro:bit robota. Zároveň budeme z micro:bit senzorov zaznamenávať údaje a posielať ich späť do počítača,*
 *kde sa budú vykresľovať.*
 
+# ToDo:
+
+- [ ] Poskladať všetkých robotov + nabiť
+- [x] Program pre MOVE MINI MK2
+- [ ] Program pre Ring:bit Car V2
+- [ ] Program pre Hummer
+- [ ] Program pre Rugged
+- [ ] Program pre Wonder Rugged
+- [ ] Program pre Cutebot
+- [ ] Program pre NEZHA
+- [ ] Program pre Simple Robotics Kit Kitronik
+- [ ] Prezentácia
+- [ ] Readme dokumentácia
+- [ ] DJI dron
+- [ ] ESP cam
+- [ ] Diaľkové ovládače
+
 **Zoznam robotov:**
 
 * MOVE MINI MK2 -- 4ks
