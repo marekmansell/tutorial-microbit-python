@@ -3,6 +3,7 @@ import radio
 from utime import ticks_diff, ticks_ms
 import neopixel
 from random import randint
+from ringbit import RINGBIT
 
 BROADCAST_INTERVAL_MS = 2000
 
@@ -14,31 +15,27 @@ pin2.set_analog_period(20)
 
 last_send_t = ticks_ms()
 np = neopixel.NeoPixel(pin0, 8)
+ring_bit = RINGBIT(pin1,pin2)
 
 
 def move_forward():
-    pin1.write_analog(50)
-    pin2.write_analog(180)
+    ring_bit.set_motors_speed(-100,-100)
 
 
 def move_left():
-    pin1.write_analog(50)
-    pin2.write_analog(50)
+    ring_bit.set_motors_speed(-100,100)
 
 
 def move_right():
-    pin1.write_analog(180)
-    pin2.write_analog(180)
+    ring_bit.set_motors_speed(100,-100)
 
 
 def move_back():
-    pin1.write_analog(180)
-    pin2.write_analog(50)
+    ring_bit.set_motors_speed(100,100)
 
 
 def stop():
-    pin1.write_digital(0)
-    pin2.write_digital(0)
+    ring_bit.set_motors_speed(0,0)
 
 
 def func_a():
@@ -63,28 +60,28 @@ def func_c():
     np.show()
 
 
-if button_a.is_pressed():
-    move_forward()
-    sleep(500)
-    stop()
-    sleep(500)
+# SELF TEST
+move_forward()
+sleep(500)
+stop()
+sleep(500)
 
-    move_left()
-    sleep(500)
-    stop()
-    sleep(500)
+move_left()
+sleep(500)
+stop()
+sleep(500)
 
-    move_right()
-    sleep(500)
-    stop()
-    sleep(500)
+move_right()
+sleep(500)
+stop()
+sleep(500)
 
-    move_back()
-    sleep(500)
-    stop()
+move_back()
+sleep(500)
+stop()
 
 
-display.scroll("MOVE MINI")
+display.scroll("RINGBIT")
 
 while True:
 

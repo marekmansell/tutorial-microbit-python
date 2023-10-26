@@ -11,11 +11,11 @@ Autor a lektor: Marek Mansell (Učíme s Hardvérom / SPy)
 
 - [ ] Poskladať všetkých robotov + nabiť
 - [x] Program pre MOVE MINI MK2
-- [ ] Program pre Ring:bit Car V2
-- [ ] Program pre Hummer
-- [ ] Program pre Rugged
+- [x] Program pre Ring:bit Car V2
+- [x] Program pre Hummer
+- [x] Program pre Buggy
 - [ ] Program pre Wonder Rugged
-- [ ] Program pre Cutebot
+- [x] Program pre Cutebot
 - [ ] Program pre NEZHA
 - [ ] Program pre Simple Robotics Kit Kitronik
 - [ ] Prezentácia
